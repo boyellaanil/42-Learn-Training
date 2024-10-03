@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Job Data</title> 
+    <link rel="stylesheet" href="create_job.css">
+    <script defer src="create_job.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Job Openings Form</h1>
+        <form id="job-form">
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" placeholder="Enter job title" id="title" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="qualification">Qualification</label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">Select Qualification</option>
+                    <option value="ug">UG</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="10th">10TH Class</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type" name="type" required>
+                    <option value="">Select Type</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="internship">Internship</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="non it">NON IT</option>
+                    <option value="it">IT</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="india">INDIA</option>
+                    <option value="canada">CANADA</option>
+                    <option value="uk">UK</option>
+                    <option value="usa">USA</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" placeholder="Write description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="opening-date">Opening Date (Current Date)</label>
+                <input type="date" name="opening-date" required>
+                <label for="file">Resume upload</label>
+                <input type="file" id="file" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>        
+    </div>
+</body>
+</html>

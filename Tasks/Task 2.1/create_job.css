@@ -1,0 +1,56 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(85, 176, 188);
+    background-image: url(https://img.pikbest.com/origin/09/32/36/36JpIkbEsT8PA.jpeg!w700wp);
+}
+.container {
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color:aqua;
+    border: 1px solid #17bc12;  
+    background-image:url(https://png.pngtree.com/background/20220729/original/pngtree-abstract-white-gray-polygonal-geometric-background-vector-illustration-picture-image_1862162.jpg) ;
+}
+
+h1 {
+    text-align: center;
+    color:blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color:purple;
+}
+
+label {
+    display: block;
+    margin-bottom: 3px;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+textarea {
+    resize: vertical;
+    height: 30px;
+    width: 97%;
+}
+
+button[type="submit"] {
+    
+    background-color: #8d13a8;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #14fb03;
+}
