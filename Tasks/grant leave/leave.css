@@ -1,0 +1,51 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(https://img.freepik.com/premium-photo/abstract-dream-light-wave-dark-light-design-wallpaper-black-shadow-wallpaper-generative-ai_520665-895.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697241600&semt=ais);
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #0040ff;
+    text-align: center;
+}
+
+form {
+    width:450px;
+    margin:  auto;
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/16/11/13/background-5050213_1280.png);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1 100px 100px rgb(1, 111, 255);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: medium;
+    color: blue;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff0000;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00e1ff;
+}
