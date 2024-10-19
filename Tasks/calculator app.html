@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1dc856;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .calculator {
+            background-color: rgb(3, 92, 236);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 18px;
+            margin: 10px 0;
+            width: 90%;
+            border-radius: 5px;
+            border: 1px solid #c01111;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ff0000;
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+    <script>
+        // Function to perform arithmetic operations
+        function calculate(operation) {
+            let num1 = parseFloat(document.getElementById("num1").value);
+            let num2 = parseFloat(document.getElementById("num2").value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                alert("Please enter valid numbers!");
+                return;
+            }
+
+            let result;
+            switch (operation) {
+                case 'sum':
+                    result = num1 + num2;
+                    break;
+                case 'product':
+                    result = num1 * num2;
+                    break;
+                case 'difference':
+                    result = num1 - num2;
+                    break;
+                case 'remainder':
+                    result = num1 % num2;
+                    break;
+                default:
+                    result = "Invalid Operation";
+            }
+
+            document.getElementById("result").innerText = "Result: " + result;
+        }
+    </script>
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Basic Calculator</h2>
+
+        <input type="number" id="num1" placeholder="Enter first number"required><br>
+        <input type="number" id="num2" placeholder="Enter second number"required><br>
+
+        <button onclick="calculate('sum')">Sum</button>
+        <button onclick="calculate('product')">Product</button>
+        <button onclick="calculate('difference')">Difference</button>
+        <button onclick="calculate('remainder')">Remainder</button>
+
+        <div id="result" class="result"></div>
+    </div>
+
+</body>
+</html>
