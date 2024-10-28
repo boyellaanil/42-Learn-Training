@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Job Application Form</title>
+  <link rel="stylesheet"href="validateform.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Job Application Form</h2>
+    <form id="jobForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"required>
+        <div class="error" id="nameError"></div>
+      </div>
+      
+      <div class="form-group">
+        <label>Educational Qualification:</label>
+        <select id="qualification">
+          <option value="">Select Qualification</option>
+          <option value="SSC">SSC</option>
+          <option value="Inter">Inter</option>
+          <option value="Degree">Degree</option>
+        </select>
+        <div class="error" id="qualificationError"></div>
+      </div>
+      
+      <div class="form-group-inline">
+        <label>Gender:</label><br><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <div class="error" id="genderError"></div>
+      </div>
+      
+      <div class="form-group">
+        <label>Apply for:</label>
+        <select id="position">
+          <option value="">Select Position</option>
+          <option value="Analyst">Analyst</option>
+          <option value="Developer">Developer</option>
+          <option value="Administrator">Administrator</option>
+          <option value="Data Scientist">Data Scientist</option>
+        </select>
+        <div class="error" id="positionError"></div>
+      </div>
+      
+      <button type="button" onclick="validateForm()">Submit Application</button>
+      <div class="success" id="successMessage"></div>
+    </form>
+  </div>
+
+  <script src="validateform.js"></script>
+</body>
+</html>
