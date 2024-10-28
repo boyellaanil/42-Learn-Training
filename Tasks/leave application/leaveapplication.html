@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Leave Application Form</title>
+    <link rel="stylesheet" href="leaveapplication.css">
+</head>
+<body>
+    <h2>College Leave Application Form</h2>
+    <form id="leaveForm" onsubmit="return validateForm()">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" placeholder="Enter Student Name"><br><br>
+
+        <label for="department">Department:</label>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="CSE">CSE</option>
+            <option value="AI">AI</option>
+            <option value="CS">CS</option>
+        </select><br><br>
+
+        <label for="year">Year:</label>
+        <select id="year" name="year" required>
+            <option value="">Select Year</option>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3">3rd Year</option>
+            <option value="4">4th Year</option>
+        </select><br><br>
+
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required><br><br>
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate" required><br><br>
+
+        <label for="reason">Reason for Leave:</label>
+        <textarea id="reason" name="reason" required></textarea><br><br>
+
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <script src="leaveaapplication.js"></script>
+</body>
+</html>
